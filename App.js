@@ -51,25 +51,5 @@ const styles = StyleSheet.create({
   shopCount:{
     marginTop: '55%',
   },
-  bookTitle:{
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  bookDescription:{
-    marginVertical: '2%',
 
-  },
-  bookDetail:{
-    display: 'flex',
-    marginVertical: '2%',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  button:{
-    paddingHorizontal: '2%',
-    paddingVertical: '1%',
-    borderColor: '#000',
-    borderWidth: 1,
-    borderStyle: 'solid',
-  }
 });
