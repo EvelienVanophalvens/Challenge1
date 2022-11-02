@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image} from 'react-native';
+import BookTile from './components/bookTile'
 
 export default function App() {
   return (
@@ -14,17 +15,11 @@ export default function App() {
           <Text style={styles.shopCount}>1</Text>
         </View>
       </View>
-      <View style={styles.bookTile}>
-        <Text style={styles.bookTitle}>Book title 1</Text>
-        <Text>By Some Random Dude</Text>
-        <View style={styles.bookDescription}>
-          <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interger luctus, nulla sit amet pellentesque ultricies, mangna nisl vulputate urna, quis feugiat purus emin id ex.</Text>
-        </View>
-        <View style={styles.bookDetail}>
-          <Text>ISBN 978-8-2165-1860-1</Text>
-          <Text style={styles.button}>READ</Text>
-        </View>
-      </View>
+      <BookTile title="Book title 1" author="by Som Random dude" discription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interger luctus, nulla sit amet pellentesque ultricies, mangna nisl vulputate urna, quis feugiat purus emin id ex." isbn="ISBN 978-8-2165-1860-1"/>
+      <BookTile title="Book title 2" author="by Som Random dude" discription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interger luctus, nulla sit amet pellentesque ultricies, mangna nisl vulputate urna, quis feugiat purus emin id ex." isbn="ISBN 978-2-1425-4277-8"/>
+      <BookTile title="Book title 3" author="by Som Random dude" discription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interger luctus, nulla sit amet pellentesque ultricies, mangna nisl vulputate urna, quis feugiat purus emin id ex." isbn="ISBN 978-5-9684-0436-7"/>
+      <BookTile title="Book title 4" author="by Som Random dude" discription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interger luctus, nulla sit amet pellentesque ultricies, mangna nisl vulputate urna, quis feugiat purus emin id ex." isbn="ISBN 978-8-3356-4834-0"/>
+
       <StatusBar style="auto" />
     </View>
   );
