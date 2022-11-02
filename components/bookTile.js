@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image} from 'react-native';
+import { StyleSheet, Text, View, TouchableNativeFeedback} from 'react-native';
 
 const bookTile = (props) => {
     return  (
@@ -10,7 +10,11 @@ const bookTile = (props) => {
         </View>
         <View style={styles.bookDetail}>
           <Text>{props.isbn}</Text>
-          <Text style={styles.button}>READ</Text>
+          <TouchableNativeFeedback>
+            <View>
+                <Text style={styles.button}>READ</Text>
+            </View>
+          </TouchableNativeFeedback>
         </View>
       </View>
     );
